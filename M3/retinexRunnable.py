@@ -14,9 +14,6 @@ def runMSRCP(inputImg, show):
     with open('Retinex/config.json', 'r') as f:
       config = json.load(f)
 
-    #img = cv2.imread(imgPath,1)
-
-
     img_msrcp = retinex.MSRCP(
         inputImg,
         config['sigma_list'],

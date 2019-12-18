@@ -16,7 +16,6 @@ def denoise_tv_chambolle(inputImg, weight, eps, n_iter_max, multichannel, show):
     # standard params skimage.restoration.denoise_tv_chambolle(inputImg, weight=0.1, eps=0.0002, n_iter_max=200, multichannel=False)
     # print(len(tvImg.shape))
 
-
     tvImg = img_as_ubyte(tvImg)
     if show:
         m3F.imshow(tvImg, "Total variation Chambolle")

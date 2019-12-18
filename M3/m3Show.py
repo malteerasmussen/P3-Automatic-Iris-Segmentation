@@ -13,17 +13,14 @@ import time
 
 
 def imshow(inputImg, title, gray=False):
-    # print(inputImg)
     plt.clf()
     plt.title(title)
     plt.axis("off")
-    # print("inputImg.shape", inputImg.shape)
     if gray:
         plt.imshow(inputImg)
     else:
-        plt.imshow(cv2.cvtColor(inputImg, cv2.COLOR_BGR2RGB), interpolation='none')
+        plt.imshow(cv2.cvtColor(inputImg, cv2.COLOR_RGB2BGR), interpolation='none')
     plt.show()
-    # plt.axes
     return inputImg
 
 

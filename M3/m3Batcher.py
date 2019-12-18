@@ -68,9 +68,9 @@ class photoBatcher:
                             for eye in face.eyes:
                                 setattr(eye, params["doAs"], getattr(eye, params["original"]))
                                 # cv2.imwrite("EXPORTS/COMPARISONS/" + now_string + ".jpg", output)
-                                saveStr = "EXPORTS/COMPARISONS/" + "didAs" + params["doAs"] + ".jpg"
-                                print("saveStr", saveStr )
-                                cv2.imwrite(saveStr, getattr(eye, params["original"]))
+                                # saveStr = "EXPORTS/COMPARISONS/" + "didAs" + params["doAs"] + ".jpg"
+                                # print("saveStr", saveStr )
+                                # cv2.imwrite(saveStr, getattr(eye, params["original"]))
                             # m3Show.imshow(eye.image, "orignal")
                             # m3Show.imshow(getattr(eye, params["doAs"]), params["doAs"])
                             # print(eye.__dict__.items())

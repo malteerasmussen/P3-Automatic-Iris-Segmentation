@@ -140,8 +140,8 @@ def export(photoArray,
         # if (folderName is not None):
         #
         # else:
-
-        m3CSV.makeCSV(photoArray, "EXPORTS/" + folderName + "/" + folderName + ".csv")
+        if CSV:
+            m3CSV.makeCSV(photoArray, "EXPORTS/" + folderName + "/" + folderName + ".csv")
         file = open("EXPORTS/" + folderName + "/" + "settings.txt","w+")
         count = 1
         # for element in m3F.funcArrToStr():
